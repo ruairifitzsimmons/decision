@@ -6,3 +6,32 @@
   padding: 0;
   font-family: 'Rubik', sans-serif;
 }
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #f0c91a, #ffaccc, #ff7dd8, #57d2ff);
+	background-size: 600% 600%;
+  background-repeat: no-repeat;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.diagonal-box {
+    background-color: rgba(255, 255, 255);
+    transform: skewY(-12deg);
+    height: 1400px;
+    width: 100%;
+    position: absolute;
+    top: 325px;
+    z-index: 0;
+    display: inline;
+}

@@ -35,7 +35,12 @@
 .style-secondary:hover {
     color: rgb(125, 125, 125);
 }
-
+.style-transparent {
+    background: rgba(255, 255, 255, 0.2);
+}
+.style-transparent:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
 
 
 /* Sizes */
@@ -44,15 +49,6 @@
 }
 .size-full {
     width: 100%;
-}
-
-
-/* Transparent */
-.yes {
-    background: rgba(255, 255, 255, 0.2);
-}
-.yes:hover {
-    background: rgba(255, 255, 255, 0.5);
 }
 
 

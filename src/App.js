@@ -8,11 +8,11 @@ function App() {
   return (
     <Router>
       <Navbar/>
+      <canvas id="canvas" class="diagonal-box"></canvas>
       <Switch>
         <Route path='/' exact component={Home}/>
       </Switch>
     </Router>
   );
 }
-
 export default App;

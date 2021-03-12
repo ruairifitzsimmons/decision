@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button } from './Button'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Button } from './Button'
+import './Navbar.css'
 import { IconContext } from 'react-icons/lib'
 
 function Navbar() {
@@ -18,69 +18,73 @@ function Navbar() {
         } else {
             setButton(true)
         }
-    };
+    }
 
     window.addEventListener('resize', showButton)
 
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
-                <nav className='navbar'>
-                    <div className='navbar-container container'>
-                        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                            <img src="images/logo-white.png" alt="Alt" className='navbar-icon'/>
-                            <span className='decision'>Decision</span>
-                        </Link>
-                        
-                        <div className='menu-icon' onClick={handleClick}>
-                            {click ? <FaTimes/> : <FaBars/>}
+                {/* Navbar */}
+                    <div className='navbar'>
+                        <div className='navbar-container container'>
+                            {/* Navbar Logo*/}
+                            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                                <img src="images/logo-white.png" alt="Alt" className='navbar-icon'/>
+                                {/*<span className='decision'>Decision</span>*/}
+                            </Link>
+                            
+                            {/* Navbar Menu Toggler */}
+                            <div className='menu-icon' onClick={handleClick}>
+                                {click ? <FaTimes/> : <FaBars/>}
+                            </div>
+
+                            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                                <li className='nav-item'>
+                                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                                        About
+                                    </Link>
+                                </li>
+
+                                <li className='nav-item'>
+                                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                        Services
+                                    </Link>
+                                </li>
+
+                                <li className='nav-item'>
+                                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                        Portfolio
+                                    </Link>
+                                </li>
+
+                                {/* Contact Button */}
+                                <li className='nav-item'>
+                                    {button ? (
+                                        <Link to='/contact' className='nav-links-btn'>
+                                            <Button buttonStyle='style-transparent'
+                                            buttonSize='size-auto'
+                                            arrow='arrow-light'>
+                                                Contact
+                                            </Button>
+                                        </Link>
+                                    ) : (
+                                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                                            <Button buttonStyle='style-primary' 
+                                            buttonSize='size-auto'
+                                            arrow='arrow-light'>
+                                                Contact
+                                            </Button>
+                                        </Link>
+                                    )}
+                                </li>
+
+                            </ul>
                         </div>
-
-                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                            <li className='nav-item'>
-                                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                    About
-                                </Link>
-                            </li>
-
-                            <li className='nav-item'>
-                                <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                    Services
-                                </Link>
-                            </li>
-
-                            <li className='nav-item'>
-                                <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                    Portfolio
-                                </Link>
-                            </li>
-
-                            <li className='nav-btn'>
-                                {button ? (
-                                    <Link to='/contact' className='btn-link'>
-                                        <Button buttonStyle='style-primary'
-                                        buttonSize='size-auto'
-                                        transparent='yes' 
-                                        arrow='arrow-light'>
-                                            Contact
-                                        </Button>
-                                    </Link>
-                                ) : (
-                                    <Link to='/contact' className='btn-link' onClick={closeMobileMenu}>
-                                        <Button buttonStyle='style-primary' 
-                                        buttonSize='size-auto' 
-                                        arrow='arrow-light' >
-                                            Contact
-                                        </Button>
-                                    </Link>
-                                )}
-                            </li>
-                        </ul>
                     </div>
-                </nav>
             </IconContext.Provider>
         </>
-    );
+    )
 }
 
 
