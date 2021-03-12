@@ -2,8 +2,6 @@
     --main: #fff;
 }
 
-
-
 /* Button */
 .btn {
     padding: 6px 14px;
@@ -18,22 +16,20 @@
     line-height:120%;
 }
 
-
-
 /* Styles */
 .style-primary {
     background-color: rgb(52, 59, 73);
 }
 .style-primary:hover {
     color: #fff;
-    background-color: rgb(117, 127, 133);
+    background-color: rgb(92, 110, 121);
 }
 .style-secondary {
     background: none;
-    color: rgb(0, 0, 0);
+    color: rgb(52, 59, 73);
 }
 .style-secondary:hover {
-    color: rgb(125, 125, 125);
+    color: rgb(92, 110, 121);
 }
 .style-transparent {
     background: rgba(255, 255, 255, 0.2);
@@ -42,7 +38,6 @@
     background: rgba(255, 255, 255, 0.5);
 }
 
-
 /* Sizes */
 .size-auto {
     width: auto;
@@ -50,8 +45,6 @@
 .size-full {
     width: 100%;
 }
-
-
 
 /* Arrows */
 .arrow-light::after {

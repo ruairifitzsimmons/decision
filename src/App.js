@@ -8,7 +8,24 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <canvas id="canvas" class="diagonal-box"></canvas>
+      <canvas id="canvas" className="diagonal-box"></canvas>
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
       <Switch>
         <Route path='/' exact component={Home}/>
       </Switch>

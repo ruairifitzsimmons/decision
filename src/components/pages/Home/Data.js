@@ -4,10 +4,10 @@ export const homeOne = {
     lightTextDesc: true,
     topLine: '',
     headline: 'Digital media management',
-    description: 'Description would go here!',
+    description: 'Content creators and brands of all sizes-from startups to influencers.',
     buttonLabel1: 'Start now',
-    buttonLabel2: 'Contact sales',
+    buttonLabel2: 'Contact us',
     imgStart: '',
-    img: 'images/svg-1.svg',
+    img: 'images/phone.png',
     alt: 'Credit Card'
 };

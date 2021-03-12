@@ -46,7 +46,7 @@
     justify-content: center;
     list-style: none;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
     font-weight: 600;
 }
 
@@ -92,13 +92,13 @@
         display: flex;
         flex-direction: column;
         width: 94%;
-        height: 370px;
+        height: 365px;
         position: absolute;
         top: 80px;
         left: 3%;
         background: #fff;
         border-radius: 25px;
-        box-shadow: 0px 20px 20px rgba(182, 182, 182, 0.2);
+        box-shadow: 0px 15px 20px rgba(150, 150, 150, 0.5);
         visibility: hidden;
     }
 
@@ -112,8 +112,7 @@
 
     .nav-links {
         color: rgb(0, 0, 0);
-        margin-top: 15px;
-        padding: 2rem;
+        padding-right: 2rem;
         width: 100%;
         display: table;
         text-align: right;
@@ -140,10 +139,6 @@
         top: 0;
         left: 0;
         transform: translate(25%, 27%);
-    }
-
-    .decision {
-        visibility: hidden;
     }
 
     .menu-icon {
