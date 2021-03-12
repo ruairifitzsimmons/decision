@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Navbar/>
       <canvas id="canvas" className="diagonal-box"></canvas>
-      <ul class="circles">
+      <ul className="circles">
               <li></li>
               <li></li>
               <li></li>
