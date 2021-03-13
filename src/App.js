@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <canvas id="canvas" className="diagonal-box"></canvas>
+        <canvas id="canvas" className="canvas" width="100"></canvas>
       <ul className="circles">
               <li></li>
               <li></li>
