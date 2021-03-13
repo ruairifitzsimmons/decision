@@ -35,7 +35,8 @@
     background: rgba(255, 255, 255, 0.2);
 }
 .style-transparent:hover {
-    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* Sizes */
@@ -51,7 +52,7 @@
     display: inline-block;
     padding-left: 6px;
     content: "\279C";
-    color: rgb(199, 199, 199);
+    color: rgb(255, 255, 255);
     transform: translateX(0px);
     transition: transform 0.1s ease-out;
 }

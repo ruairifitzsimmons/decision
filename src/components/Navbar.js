@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Button } from './Button'
@@ -20,6 +20,10 @@ function Navbar() {
         }
     }
 
+    useEffect(() => {
+        showButton();
+      }, []);
+
     window.addEventListener('resize', showButton)
 
     return (
@@ -40,19 +44,19 @@ function Navbar() {
                             </div>
 
                             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                                <li className='nav-item'>
+                                <li className='nav-item nav-hover'>
                                     <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                         About
                                     </Link>
                                 </li>
 
-                                <li className='nav-item'>
+                                <li className='nav-item nav-hover'>
                                     <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                         Services
                                     </Link>
                                 </li>
 
-                                <li className='nav-item'>
+                                <li className='nav-item nav-hover'>
                                     <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                         Portfolio
                                     </Link>
@@ -61,7 +65,7 @@ function Navbar() {
                                 {/* Contact Button */}
                                 <li className='nav-item'>
                                     {button ? (
-                                        <Link to='/contact' className='nav-links-btn'>
+                                        <Link to='/contact' className='nav-links'>
                                             <Button buttonStyle='style-transparent'
                                             buttonSize='size-auto'
                                             arrow='arrow-light'>
