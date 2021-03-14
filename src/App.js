@@ -9,23 +9,14 @@ function App() {
     <Router>
       <Navbar/>
         <canvas id="canvas" className="canvas" width="100"></canvas>
-      <ul className="circles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-      </ul>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       <Switch>
         <Route path='/' exact component={Home}/>
       </Switch>
