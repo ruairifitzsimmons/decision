@@ -9,7 +9,7 @@
 
 body {
   background: linear-gradient(130deg, #ffbb00, #ffbb00, rgb(255, 126, 165), #00bbff, #00bbff);
-	background-size: 400% 400%;
+  background-size: 400% 400%;
   background-repeat: no-repeat;
 	animation: gradient 30s ease infinite;
 }
@@ -30,7 +30,7 @@ body {
   background-color: rgba(255, 255, 255);
   width: 100%;
   position:absolute;
-  clip-path: polygon(0 50%, 100% 20%, 100% 100%, 0 100%);
+  clip-path: polygon(0 42%, 100% 15%, 100% 100%, 0 100%);
   z-index: -1;
   display: inline;
   overflow: hidden;
@@ -131,12 +131,12 @@ body {
 
 @media screen and (max-width: 1199px) {
     .canvas {
-    clip-path: polygon(0 45%, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 38%, 100% 18%, 100% 100%, 0 100%);
   }
 }
 @media screen and (max-width:991px) {
   .canvas {
-    clip-path: polygon(0 38%, 100% 18%, 100% 100%, 0 100%);
+    clip-path: polygon(0 34%, 100% 20%, 100% 100%, 0 100%);
   }
 }
 

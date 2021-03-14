@@ -8,6 +8,6 @@ export const homeOne = {
     buttonLabel1: 'Start now',
     buttonLabel2: 'Contact us',
     imgStart: '',
-    img: 'images/phone.png',
+    img: 'images/main-image.png',
     alt: 'Mobile'
 };
