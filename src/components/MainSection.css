@@ -61,11 +61,11 @@
 }
 
 .home_main-img {
-    max-width: 900px;
+    max-width: 1100px;
     padding-right:0;
-    margin-top:-175px;
     margin-right:0;
     margin-left:100px;
+    margin-top:-50px;
 }
 
 @media screen {
@@ -85,7 +85,9 @@
         font-size:80px;
     }
     .home_main-img {
-        max-width: 700px;
+        max-width: 900px;
+        margin-top: -50px;
+        margin-left: 40px;
     }
 }
 
@@ -114,7 +116,7 @@
     .heading {
         margin-top: 10px;
         color:rgb(30, 30, 30);
-        font-size:54px;
+        font-size:64px;
         letter-spacing:-0.2rem;
         line-height: 1;
     }
@@ -126,14 +128,10 @@
         font-weight: 400;
     }
 
-    .home_main-img-wrapper {
-        width: 555px;
-    }
-
     .home_main-img {
-        max-width: 600px;
-        position: relative;
-
+        margin-top: -50px;
+        max-width: 900px;
+        margin-left: 100px;
     }
     
 }
@@ -141,5 +139,8 @@
 @media screen and (max-width:601px) {
     .home_main-img-wrapper {
         visibility: hidden;
+    }
+    .heading {
+        font-size:54px;
     }
 }
