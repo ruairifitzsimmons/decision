@@ -18,7 +18,7 @@ function MainSection({
 }) {
     return (
         <>
-        <div className={lightBg ? 'home_main-section' : 'home_main-section darkBg'}>
+        <div className={lightBg ? 'home_main-section' : 'home_main-section lightBg'}>
             <div className="container">
                 <div className="row home_main-row"
                 style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>

@@ -1,5 +1,5 @@
 export const homeOne = {
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: true,
     topLine: '',
@@ -9,5 +9,18 @@ export const homeOne = {
     buttonLabel2: 'Contact us',
     imgStart: '',
     img: 'images/main-image.png',
+    alt: 'Social Image'
+};
+
+export const homeTwo = {
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'ABOUT US',
+    headline: 'What we do',
+    description: 'We are a marketing & graphic design agency',
+    buttonLabel1: 'Start now',
+    imgStart: 'start',
+    img: '',
     alt: 'Mobile'
 };

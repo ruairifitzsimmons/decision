@@ -7,6 +7,9 @@
 .home_main-row {
     align-items:center;
 }
+.lightBg {
+    background: #fff;
+}
 
 .row {
     display:flex;
@@ -32,12 +35,13 @@
 }
 
 .top-line {
-    color: #fff;
+    color: rgb(153, 153, 153);
     font-size:16px;
     line-height:16px;
     font-weight:600;
     letter-spacing:1.4px;
     text-transform:uppercase;
+    margin-bottom: 10px;
 }
 
 .heading {
