@@ -1,25 +1,23 @@
 import React from 'react';
 import { Button } from './Button';
 import './Services.css';
-import { IoIosRocket } from 'react-icons/io';
-import { BsXDiamondFill } from 'react-icons/bs';
-import { FaPencilRuler } from 'react-icons/fa';
+import { MdAddCircleOutline, MdWallpaper, MdTimeline } from 'react-icons/md';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
 function Pricing() {
   return (
-    <IconContext.Provider value={{ color: '#EAEAEA', size: 48 }}>
+    <IconContext.Provider value={{ size: 48 }} className="icons">
       <div className='service_section'>
         <div className='service_wrapper'>
           <div className='service_container'>
             <div className='service_container-card'>
               <div className='service_container-cardInfo'>
                 <div className='icon'>
-                  <FaPencilRuler />
+                  <MdWallpaper />
                 </div>
                 <h3>Graphic Design</h3>
-                <p>Design to us is something magical - we are lucky that our clients let us get creative and build their products</p>
+                <p>A short description would go here about the relevant topic. Sell it to them nicely, but don't bore them.</p>
                 <Link to="/products">
                   <Button buttonStyle='style-secondary' arrow='arrow-dark'>
                     Learn more
@@ -30,10 +28,10 @@ function Pricing() {
             <div className='service_container-card'>
               <div className='service_container-cardInfo'>
                 <div className='icon'>
-                  <BsXDiamondFill />
+                  <MdAddCircleOutline />
                 </div>
-                <h3>Something</h3>
-                <p>Relevant information will go in here regarding the topic. Not sure about using services or the platforms the services are on</p>
+                <h3>Content Creation</h3>
+                <p>A short description would go here about the relevant topic. Sell it to them nicely, but don't bore them.</p>
                 <Button buttonStyle='style-secondary' arrow='arrow-dark'>
                   Learn more
                 </Button>
@@ -42,12 +40,10 @@ function Pricing() {
             <div className='service_container-card'>
               <div className='service_container-cardInfo'>
                 <div className='icon'>
-                  <IoIosRocket />
+                  <MdTimeline />
                 </div>
                 <h3>Marketing</h3>
-                <p>We strategically grow, engage and monetize your social media platforms.
-                  Each post will increase your brands influence
-                </p>
+                <p>A short description would go here about the relevant topic. Sell it to them nicely, but don't bore them.</p>
                 <Button buttonStyle='style-secondary' arrow='arrow-dark'>
                   Learn more
                 </Button>

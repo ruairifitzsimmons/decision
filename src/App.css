@@ -10,7 +10,7 @@
 body {
   background: linear-gradient(130deg, #ffbb00, #ffbb00, rgb(255, 126, 165), #00bbff, #00bbff);
   background-size: 400% 400%;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
 	animation: gradient 30s ease infinite;
 }
 
@@ -34,7 +34,7 @@ body {
   z-index: -1;
   display: inline;
   overflow: hidden;
-  height: 100vh;
+  height: 1000px;
 }
 
 .circles{

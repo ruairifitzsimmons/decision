@@ -30,7 +30,7 @@
     color: rgb(52, 59, 73);
 }
 .style-secondary:hover {
-    color: rgb(92, 110, 121);
+    color: rgb(112, 126, 134);
 }
 .style-transparent {
     background: rgba(255, 255, 255, 0.2);
@@ -67,12 +67,12 @@
     display: inline-block;
     padding-left: 6px;
     content: "\279C";
-    color: rgb(0, 0, 0);
+    color: rgb(52, 59, 73);
     transform: translateX(0px);
     transition: transform 0.1s ease-out;
 }
 .arrow-dark:hover::after {
     content: "\279C";
-    color: rgb(0, 0, 0);
+    color: rgb(112, 126, 134);
     transform: translateX(2px);
 }
