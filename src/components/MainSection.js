@@ -18,11 +18,12 @@ function MainSection({
 }) {
     return (
         <>
+        <canvas className="canvas"></canvas>
         <div className={lightBg ? 'home_main-section' : 'home_main-section lightBg'}>
             <div className="container">
                 <div className="row home_main-row"
                 style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
-                    <div className="col">
+                    <div className="col home_main-col">
                         <div className="home_main-text-wrapper">
                             <div className="top-line">{topLine}</div>
                                 <h1 className={lightText ? 'heading' : 'heading dark'}>{headline}</h1>

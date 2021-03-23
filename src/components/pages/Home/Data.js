@@ -16,11 +16,11 @@ export const homeTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'ABOUT US',
-    headline: 'What we do',
-    description: 'We are a marketing & graphic design agency',
+    topLine: 'Unified platform',
+    headline: 'A fully integrated platform of digital services',
+    description: 'We bring together everything thats required to build a strong brand and showcase your presence online.',
     buttonLabel1: 'Start now',
     imgStart: 'start',
-    img: '',
+    img: 'images/main-image.png',
     alt: 'Mobile'
 };
