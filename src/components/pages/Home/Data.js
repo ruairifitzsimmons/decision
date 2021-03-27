@@ -13,7 +13,7 @@ export const homeOne = {
 };
 
 export const homeTwo = {
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Unified platform',
@@ -21,6 +21,19 @@ export const homeTwo = {
     description: 'We bring together everything thats required to build a strong brand and showcase your presence online.',
     buttonLabel1: 'Start now',
     imgStart: 'start',
+    img: 'images/main-image.png',
+    alt: 'Mobile'
+};
+
+export const homeThree = {
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Gripping visuals',
+    headline: 'Beautiful graphics designed make you stand out',
+    description: 'We craft visuals that help you stand out from the crowd, connect with your audience, and grow your brand.',
+    buttonLabel1: 'Start now',
+    imgStart: '',
     img: 'images/main-image.png',
     alt: 'Mobile'
 };

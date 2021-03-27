@@ -4,7 +4,7 @@
 }
 
 .darkBg {
-    background: rgb(21, 21, 39);
+    background: rgb(22, 24, 37);
 }
 
 .lightBg {
@@ -16,23 +16,24 @@
     display:flex;
     flex-wrap:wrap;
     align-content:center;
-    
 }
 
-.section-col {
+.sectiontwo-col {
     flex:1;
     flex-basis:50%;
     overflow:hidden;
 }
 
-.section-text-wrapper {
-    max-width:540px;
+.sectiontwo-text-wrapper {
+    padding-left: 250px;
+    margin-right: 100px;
     padding-top:0;
     margin-bottom: 120px;
+    text-align: right;
 }
 
-.top-line {
-    color: #635bff;
+.sectiontwo-top-line {
+    color: #00d4ff;
     font-size:18px;
     line-height:16px;
     font-weight:600;
@@ -40,32 +41,28 @@
     margin-bottom: 30px;
 }
 
-.section-heading {
+.sectiontwo-heading {
     margin-bottom:24px;
     font-size:0.9em;
     line-height:1.2;
     letter-spacing: -0.1rem;
-    font-weight:500;
-    color: #000;
+    font-weight:400;
+    color: rgb(255, 255, 255);
 }
 
-.section-subtitle {
-    max-width:440px;
+.sectiontwo-subtitle {
     margin-bottom:15px;
     font-size:18px;
     line-height:24px;
+    color: rgb(255, 255, 255);
 }
 
-.section-img-wrapper {
+.sectiontwo-img-wrapper {
     position:relative;
-    float: right;
 }
 
-.section-img {
-    max-width: 900px;
-    padding-left:0;
-    margin-left:0;
-    margin-right:100px;
+.sectiontwo-img {
+    max-width:900px;
 }
 
 @media screen {
@@ -76,22 +73,25 @@
 
 
 @media screen and (max-width:991px) {
-    .section-col {
+    .sectiontwo-col {
         flex-basis: 100%;
     }
-    .section-text-wrapper {
+    .sectiontwo-text-wrapper {
         margin-left: 40px;
+        padding-left: 0px;
+        margin-right: 0px;
+        text-align: start;
     }
-    .section-heading {
+    .sectiontwo-heading {
         max-width:90%;
     }
-    .section-subtitle {
+    .sectiontwo-subtitle {
         max-width:85%;
     }
-    .section-img-wrapper {
+    .sectiontwo-img-wrapper {
         float:none;
     }
-    .section-img {
+    .sectiontwo-img {
         max-width: 700px;
         margin-right:0px;
     }
@@ -99,7 +99,7 @@
 
 
 @media screen and (max-width:400px) {
-    .section-img-wrapper {
+    .sectiontwo-img-wrapper {
         visibility:visible;
     }
 }

@@ -44,6 +44,9 @@
 .blue {
     background-color: #00d4ff;
 }
+.blue:hover {
+    background-color: #09b5d8;
+}
 .purple {
     background-color: #635bff;
 }
