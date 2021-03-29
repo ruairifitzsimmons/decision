@@ -90,6 +90,7 @@
     }
     .section-img-wrapper {
         float:none;
+        right: 150px;
     }
     .section-img {
         max-width: 700px;

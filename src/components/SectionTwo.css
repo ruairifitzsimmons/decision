@@ -4,7 +4,7 @@
 }
 
 .darkBg {
-    background: rgb(22, 24, 37);
+    background: rgb(13, 39, 63);
 }
 
 .lightBg {
@@ -25,11 +25,11 @@
 }
 
 .sectiontwo-text-wrapper {
-    padding-left: 250px;
-    margin-right: 100px;
+    max-width:540px;
     padding-top:0;
+    text-align: left;
+    margin:0 auto;
     margin-bottom: 120px;
-    text-align: right;
 }
 
 .sectiontwo-top-line {
@@ -46,7 +46,7 @@
     font-size:0.9em;
     line-height:1.2;
     letter-spacing: -0.1rem;
-    font-weight:400;
+    font-weight:500;
     color: rgb(255, 255, 255);
 }
 
@@ -90,16 +90,10 @@
     }
     .sectiontwo-img-wrapper {
         float:none;
+        right: 150px;
     }
     .sectiontwo-img {
         max-width: 700px;
         margin-right:0px;
-    }
-}
-
-
-@media screen and (max-width:400px) {
-    .sectiontwo-img-wrapper {
-        visibility:visible;
     }
 }
