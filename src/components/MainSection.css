@@ -149,7 +149,7 @@
     }
 }
 
-.canvas{
+.canvas-top{
     background-color: #00aeff;
     width: 100%;
     position:absolute;
@@ -162,18 +162,18 @@
   
   
 @media screen and (max-width: 1199px) {
-    .canvas {
+    .canvas-top {
         clip-path: polygon(0 0, 100% 0, 100% 27%, 0 48%);
     }
 }
 @media screen and (max-width:991px) {
-    .canvas {
+    .canvas-top {
         clip-path: polygon(0 0, 100% 0, 100% 30%, 0 45%);
     }
 }
 
 @media screen and (max-width:768px) {
-    .canvas {
+    .canvas-top {
         clip-path: polygon(0 0, 100% 0, 100% 30%, 0 40%);
     }
 }

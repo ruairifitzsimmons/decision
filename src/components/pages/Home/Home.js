@@ -1,9 +1,11 @@
 import React from 'react';
 import MainSection from '../../MainSection';
+import Services from '../../Services';
 import Section from '../../Section';
 import SectionTwo from '../../SectionTwo';
+import Contact from '../../Contact';
 import {homeOne, homeTwo, homeThree} from './Data';
-import Services from '../../Services';
+
 
 function Home() {
     return (
@@ -12,6 +14,7 @@ function Home() {
             <Services/>
             <Section {...homeTwo}/>
             <SectionTwo {...homeThree}/>
+            <Contact {...Contact}/>
         </>
     )
 }

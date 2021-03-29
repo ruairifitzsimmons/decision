@@ -18,7 +18,7 @@ function MainSection({
 }) {
     return (
         <>
-        <canvas className="canvas"></canvas>
+        <canvas className="canvas-top"></canvas>
         <div className={lightBg ? 'home_main-section' : 'home_main-section lightBg'}>
             <div className="container">
                 <div className="row home_main-row"

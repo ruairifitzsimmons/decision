@@ -19,7 +19,7 @@ function Section({
         <>
         <div className={lightBg ? 'home_section lightBg' : 'home_section darkBg'}>
             <div className="section-container">
-                <div className="row section-row"
+                <div className="row sectiontwo-row"
                 style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
                     <div className="col sectiontwo-col">
                         <div className="sectiontwo-text-wrapper">

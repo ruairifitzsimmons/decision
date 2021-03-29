@@ -11,7 +11,7 @@
     background: rgb(249, 252, 255);
 }
 
-.section-row {
+.sectiontwo-row {
     align-items:center;
     display:flex;
     flex-wrap:wrap;
@@ -27,7 +27,6 @@
 .sectiontwo-text-wrapper {
     max-width:540px;
     padding-top:0;
-    text-align: left;
     margin:0 auto;
     margin-bottom: 120px;
 }
@@ -68,6 +67,12 @@
 @media screen {
     .home_section {
         font-size:45px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .sectiontwo-row{
+        margin-left:50px;
     }
 }
 
