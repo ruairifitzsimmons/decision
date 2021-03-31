@@ -50,7 +50,7 @@
 
 .section-subtitle {
     max-width:440px;
-    margin-bottom:15px;
+    margin-bottom:25px;
     font-size:18px;
     line-height:24px;
 }
@@ -61,7 +61,7 @@
 }
 
 .section-img {
-    max-width: 900px;
+    max-width: 1100px;
     padding-left:0;
     margin-left:0;
     margin-right:100px;
@@ -99,7 +99,7 @@
 @media screen and (max-width:600px) {
     .section-img-wrapper {
         float:none;
-        right: 150px;
+        right: 250px;
     }
     .section-img {
         max-width: 800px;

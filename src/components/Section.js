@@ -10,6 +10,7 @@ function Section({
     lightTextDesc,
     headline,
     description,
+    description2,
     buttonLabel1,
     img,
     alt,
@@ -27,6 +28,8 @@ function Section({
                                 <h1 className={lightText ? 'section-heading' : 'heading dark'}>{headline}</h1>
                                     <p className={lightTextDesc ? 'section-subtitle' : 'section-subtitle dark'}
                                     >{description}</p>
+                                    <p className={lightTextDesc ? 'section-subtitle' : 'section-subtitle dark'}
+                                    >{description2}</p>
                                     <Link to="/contact">
                                         <Button buttonStyle='style-primary' buttonColor='purple' buttonSize='size-auto' arrow='arrow-light'>{buttonLabel1}</Button>
                                     </Link>

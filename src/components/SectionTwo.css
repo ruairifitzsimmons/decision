@@ -61,7 +61,7 @@
 }
 
 .sectiontwo-img {
-    max-width:1100px;
+    max-width:900px;
 }
 
 @media screen {
@@ -108,7 +108,7 @@
 @media screen and (max-width:600px) {
     .sectiontwo-img-wrapper {
         float:none;
-        right: 150px;
+        right: 250px;
     }
     .sectiontwo-img {
         max-width: 800px;

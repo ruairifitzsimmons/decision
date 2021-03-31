@@ -19,10 +19,11 @@ export const homeTwo = {
     topLine: 'Unified platform',
     headline: 'A fully integrated platform of digital services',
     description: 'We bring together everything thats required to build a strong brand and showcase your presence online.',
+    description2: 'From Instagram to YouTube, Twitch & so much more, we strive to deliver high quality visuals that represents everything that you and your brand stand for.',
     buttonLabel1: 'Start now',
     imgStart: 'start',
-    img: 'images/main-image.png',
-    alt: 'Mobile'
+    img: 'images/section-image.png',
+    alt: 'Services'
 };
 
 export const homeThree = {
@@ -34,6 +35,6 @@ export const homeThree = {
     description: 'We craft visuals that help you stand out from the crowd, connect with your audience, and grow your brand.',
     buttonLabel1: 'Start now',
     imgStart: '',
-    img: 'images/main-image.png',
+    img: 'images/section-image.png',
     alt: 'Mobile'
 };
