@@ -73,6 +73,16 @@
     }
 }
 
+@media screen and (max-width:1199px) {
+    .section-img-wrapper {
+        float:none;
+        right: 325px;
+    }
+    .section-img {
+        max-width: 800px;
+        margin-right:0px;
+    }
+}
 
 @media screen and (max-width:991px) {
     .section-col {
@@ -99,10 +109,10 @@
 @media screen and (max-width:600px) {
     .section-img-wrapper {
         float:none;
-        right: 250px;
+        right: 260px;
     }
     .section-img {
-        max-width: 800px;
+        max-width: 700px;
         margin-right:0px;
     }
 }
