@@ -99,14 +99,25 @@
     }
     .section-img-wrapper {
         float:none;
-        right: 150px;
+        right: 120px;
     }
     .section-img {
-        max-width: 1100px;
+        max-width: 900px;
         margin-right:0px;
     }
 }
+
 @media screen and (max-width:600px) {
+    .section-img-wrapper {
+        float:none;
+        right: 160px;
+    }
+    .section-img {
+        max-width: 700px;
+        margin-right:0px;
+    }
+}
+@media screen and (max-width:400px) {
     .section-img-wrapper {
         float:none;
         right: 260px;

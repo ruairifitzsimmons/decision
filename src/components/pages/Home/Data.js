@@ -31,10 +31,10 @@ export const homeThree = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Gripping visuals',
-    headline: 'Beautiful graphics designed make you stand out',
+    headline: 'Beautiful graphics designed to make you stand out',
     description: 'We craft visuals that help you stand out from the crowd, connect with your audience, and grow your brand.',
     buttonLabel1: 'Start now',
     imgStart: '',
-    img: 'images/section-image.png',
+    img: 'images/section2-image.png',
     alt: 'Mobile'
 };

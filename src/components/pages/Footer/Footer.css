@@ -70,7 +70,13 @@
 
 .social-logo {
     background: #635bff;
-    height: 50px;
+    padding:7px;
+    border-radius: 30px;
+    height: 56px;
+    transition: 0.2s ease;
+}
+.social-logo:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:992px) {
