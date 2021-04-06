@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll} from 'react-scroll'
 import './SectionTwo.css';
 
 function Section({
@@ -18,7 +18,7 @@ function Section({
     return (
         <>
         <div className={lightBg ? 'home_section2 lightBg' : 'home_section2 darkBg'}>
-            <div className="section-container">
+            <div className="sectiontwo-container" id="section-two">
                 <div className="row sectiontwo-row"
                 style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
                     <div className="col sectiontwo-col">
@@ -27,7 +27,25 @@ function Section({
                                 <h1 className={lightText ? 'sectiontwo-heading' : 'heading dark'}>{headline}</h1>
                                     <p className={lightTextDesc ? 'sectiontwo-subtitle' : 'sectiontwo-subtitle dark'}
                                     >{description}</p>
-                                    <Link to="/contact">
+                
+                                    <div className="counter-wrapper">
+                                        <div className="counter-row">
+                                            <div className="counter">
+                                                <h1 className="counter-h1">20m <span className="plus">+</span></h1>
+                                                <p className="counter-p">Total views</p>
+                                            </div>
+                                            <div className="counter">
+                                                <h1 className="counter-h1">900,000 <span className="plus">+</span></h1>
+                                                <p className="counter-p">Subscribers</p>
+                                            </div>
+                                            <div className="counter">
+                                                <h1 className="counter-h1">700,000 <span className="plus">+</span></h1>
+                                                <p className="counter-p">Followers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <Link to="contact-container" smooth={true} duration={1000}>
                                         <Button buttonStyle='style-primary' buttonColor='blue' buttonSize='size-auto' arrow='arrow-light'>{buttonLabel1}</Button>
                                     </Link>
                         </div>

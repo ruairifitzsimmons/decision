@@ -58,6 +58,7 @@
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -67,10 +68,10 @@
     text-decoration: none;
     height: 100%;
     padding: 7px 14px;
+    transition: 0.2s ease;
 }
 
 .nav-links:hover {
-    transition: 0.2s ease;
     color:rgb(240, 240, 240);
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll} from 'react-scroll'
 import './MainSection.css';
 
 function MainSection({
@@ -18,7 +18,7 @@ function MainSection({
 }) {
     return (
         <>
-        <canvas className="canvas-top"></canvas>
+        
         <div className={lightBg ? 'home_main-section' : 'home_main-section lightBg'}>
             <div className="container">
                 <div className="row home_main-row"
@@ -29,10 +29,10 @@ function MainSection({
                                 <h1 className={lightText ? 'heading' : 'heading dark'}>{headline}</h1>
                                     <p className={lightTextDesc ? 'home_main-subtitle' : 'home_main-subtitle dark'}
                                     >{description}</p>
-                                    <Link to="/contact">
+                                    <Link to="contact-container" smooth={true} duration={1000}>
                                         <Button buttonStyle='style-primary' buttonSize='size-auto' arrow='arrow-light'>{buttonLabel1}</Button>
                                     </Link>
-                                    <Link to="/contact">
+                                    <Link to="contact-container" smooth={true} duration={1000}>
                                         <Button buttonStyle='style-secondary' buttonSize='size-auto'>{buttonLabel2}</Button>
                                     </Link>
                         </div>

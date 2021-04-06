@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll} from 'react-scroll'
 import './Section.css';
 
 function Section({
@@ -19,7 +19,7 @@ function Section({
     return (
         <>
         <div className={lightBg ? 'home_section lightBg' : 'home_section darkBg'}>
-            <div className="section-container">
+            <div className="section-container" id="section">
                 <div className="row section-row"
                 style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}>
                     <div className="col section-col">
@@ -30,7 +30,7 @@ function Section({
                                     >{description}</p>
                                     <p className={lightTextDesc ? 'section-subtitle' : 'section-subtitle dark'}
                                     >{description2}</p>
-                                    <Link to="/contact">
+                                    <Link to="contact-container" smooth={true} duration={1000}>
                                         <Button buttonStyle='style-primary' buttonColor='purple' buttonSize='size-auto' arrow='arrow-light'>{buttonLabel1}</Button>
                                     </Link>
                         </div>

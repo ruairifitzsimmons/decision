@@ -6,7 +6,8 @@ import './Contact.css';
 function ContactForm() {
     const [state, handleSubmit] = useForm("xayawrdl");
     if (state.succeeded) {
-        return <p className="thanks-return">Thanks, your submission has been sent 🚀</p>;
+        return [<ContactForm />,
+        <p className="thanks-return">Thanks, your submission has been sent 🚀</p>];
     }
     return (
             <div className="contact-container">
@@ -19,17 +20,17 @@ function ContactForm() {
                             <input name="name" id="name" type="text"placeholder="name"/>
                             <ValidationError prefix="Name" field="name" errors={state.errors}/>
 
-                            <label htmlFor="">Email</label>
+                            <label htmlFor="email">Email</label>
                             <input name="email" id="email" type="email" placeholder="email"/>
                             <ValidationError prefix="Email" field="email" errors={state.errors}/>
 
-                            <label htmlFor="">Message</label>
+                            <label htmlFor="message">Message</label>
                             <textarea name="message" id="message" type="text" placeholder="message"/>
                             <ValidationError prefix="Message" field="message" errors={state.errors}/>
 
                             <Button buttonStyle='style-primary' buttonSize='size-full' arrow='arrow-light' type="submit" disabled={state.submitting}>
                                 Submit
-                                </Button>
+                            </Button>
                         </form>
                     </div>
                 </div>
@@ -37,4 +38,10 @@ function ContactForm() {
     )
 }
 
-export default ContactForm
+function Form() {
+    return (
+        <ContactForm />
+    );
+}
+
+export default Form;

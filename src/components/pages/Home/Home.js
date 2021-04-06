@@ -10,6 +10,7 @@ import {homeOne, homeTwo, homeThree} from './Data';
 function Home() {
     return (
         <>
+            <canvas className="canvas-top"></canvas>
             <MainSection {...homeOne}/>
             <Services/>
             <Section {...homeTwo}/>

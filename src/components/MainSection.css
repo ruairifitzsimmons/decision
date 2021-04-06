@@ -1,6 +1,7 @@
 .home_main-section {
     padding-top: 80px;
     overflow:hidden;
+    
 }
 
 .home_main-row {
@@ -14,6 +15,10 @@
 }
 .lightBg {
     background: #fff;
+}
+
+.darkBg {
+    background: rgb(13, 39, 63);
 }
 
 .home_main-col {

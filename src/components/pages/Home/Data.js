@@ -32,7 +32,7 @@ export const homeThree = {
     lightTextDesc: true,
     topLine: 'Gripping visuals',
     headline: 'Beautiful graphics designed to make you stand out',
-    description: 'We craft visuals that help you stand out from the crowd, connect with your audience, and grow your brand.',
+    description: 'We craft visuals that help you stand out from the crowd, connect with your audience, and grow your brand. We do the all the work, so you can focus on what you do best.',
     buttonLabel1: 'Start now',
     imgStart: '',
     img: 'images/section2-image.png',

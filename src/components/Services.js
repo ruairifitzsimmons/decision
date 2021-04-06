@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Pricing() {
   return (
     <IconContext.Provider value={{ size: 48 }} className="icons">
-      <div className='service_section'>
+      <div className='service_section' id="services">
         <div className='service_wrapper'>
           <div className='service_container'>
             <div className='service_container-card'>

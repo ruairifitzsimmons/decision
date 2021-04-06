@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, animateScroll as scroll} from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Button } from './Button'
 import './Navbar.css'
@@ -45,27 +45,27 @@ function Navbar() {
 
                             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                                 <li className='nav-item'>
-                                    <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                                        About
-                                    </Link>
-                                </li>
-
-                                <li className='nav-item'>
-                                    <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                                    <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
                                         Services
                                     </Link>
                                 </li>
 
                                 <li className='nav-item'>
-                                    <Link to='/portolio' className='nav-links' onClick={closeMobileMenu}>
-                                        Portfolio
+                                    <Link to='section-two' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                                        Visuals
                                     </Link>
+                                </li>
+
+                                <li className='nav-item' onClick={closeMobileMenu}>
+                                    <a className='nav-links' href="https://www.behance.net/decision3" target="_blank" rel="noreferrer">
+                                    Portfolio
+                                    </a>
                                 </li>
 
                                 {/* Contact Button */}
                                 <li className='nav-item'>
                                     {button ? (
-                                        <Link to='/contact' className='nav-links'>
+                                        <Link to='contact-container' smooth={true} duration={1000} className='nav-links'>
                                             <Button buttonStyle='style-transparent'
                                             buttonSize='size-auto'
                                             arrow='arrow-light'>
@@ -73,7 +73,7 @@ function Navbar() {
                                             </Button>
                                         </Link>
                                     ) : (
-                                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                                        <Link to='contact-container' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
                                             <Button buttonStyle='style-primary' 
                                             buttonSize='size-auto'
                                             arrow='arrow-light'>

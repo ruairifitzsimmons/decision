@@ -54,15 +54,20 @@ function Footer() {
                         to='/'
                         target='_blank'
                         aria-label='Facebook'>
-                            <FaFacebook/>
+                            <a className="sociallink" href="https://www.facebook.com/" target="_blank">
+                                <FaFacebook/>
+                            </a>
                         </Link>
+                        
 
                         <Link
                         className='social-icon-link'
                         to='/'
                         target='_blank'
                         aria-label='Twitter'>
-                            <FaTwitter/>
+                            <a className="sociallink" href="https://www.twitter.com/decisionthree" target="_blank">
+                                <FaTwitter/>
+                            </a>
                         </Link>
 
                         <Link
@@ -70,8 +75,11 @@ function Footer() {
                         to=''
                         target=''
                         aria-label='Instagram'>
-                            <FaInstagram/>
+                            <a className="sociallink" href="https://www.instagram.com/decision.gg/" target="_blank">
+                                <FaInstagram/>
+                            </a>
                         </Link>
+
                     </div>
                 </div>
             </section>

@@ -1,5 +1,6 @@
 .contact-container {
-    height: 700px;
+    padding-top: 100px;
+    height: 900px;
 }
 
 .contact-form {
@@ -52,19 +53,35 @@ label {
 }
 
 .thanks-return {
-    background: rgb(13, 39, 63);
-    color: white;
+    transition: 1s ease;
+    position: relative;
+    background: rgb(40, 165, 9);
+    padding: 5px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom:100px;
+    margin-top:-120px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom:400px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
     letter-spacing: -0.05rem;
 }  
 
 @media screen and (max-width: 600px) {
+    .contact-container {
+        padding-top: 30px;
+    }
     .contact-form {
         padding: 20px 20px 40px 20px;
         max-width: 340px;
         border: 1px solid rgba(255, 255, 255, 0);
+    }
+    .thanks-return {
+        margin-top:-240px;
+        width: 260px;
+        border-radius: 10px;
+        font-size:14px;
     }
 }

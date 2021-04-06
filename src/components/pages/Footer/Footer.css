@@ -37,12 +37,13 @@
     border:1px solid #635bff;
 }
 
-.social-icon-link {
+.sociallink{
+    display: block;
     color: #b8b8b8;
     font-size:18px;
     transition: 0.2s ease;
 }
-.social-icon-link:hover {
+.sociallink:hover {
     transform: scale(1.1);
     color: #635bff;
 }

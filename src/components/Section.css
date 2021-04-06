@@ -1,14 +1,13 @@
-.home_section{
-    padding:100px 0px 150px 0px;
-    overflow:hidden;
-}
-
 .darkBg {
     background: rgb(21, 21, 39);
 }
 
 .lightBg {
     background: rgb(249, 252, 255);
+    padding:100px 0px 150px 0px;
+    overflow:hidden;
+    margin-bottom: -100px;
+    
 }
 
 .section-row {
