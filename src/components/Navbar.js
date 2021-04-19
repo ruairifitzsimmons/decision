@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Button } from './Button'
 import './Navbar.css'

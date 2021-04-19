@@ -1,4 +1,5 @@
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './Footer.css';
 import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
@@ -9,6 +10,10 @@ import {
 } from 'react-icons/fa';
 
 function Footer() {
+    const [state, handleSubmit] = useForm("xbjqjggw");
+  if (state.succeeded) {
+    return [<Footer />];
+  }
     return (
         <div className='footer-container'>
 
@@ -22,22 +27,26 @@ function Footer() {
 
             <section className='footer-subscription'>
                 {/* Header */}
-                <p className='footer-subscription-heading'>
-                    Join my email list to recieve ideas, deals and freebies!
-                </p>
+                <label htmlFor="email">
+                    <p className='footer-subscription-heading'>
+                        Join my email list to recieve ideas, deals and freebies!
+                    </p>
+                </label>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time
                 </p>
 
                 {/* Form */}
                 <div className='input-area'>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input 
                         className='footer-input'
+                        id='email'
                         name='email'
                         type='email'
                         placeholder='email'/>
-                        <Button buttonStyle='style-primary' buttonColor='purple' buttonSize='size-auto' >
+                        <ValidationError prefix="Email" field="email" errors={state.errors}/>
+                        <Button type='submit' disabled={state.submitting} buttonStyle='style-primary' buttonColor='purple' buttonSize='size-auto' >
                             Subscribe
                         </Button>
                     </form>
@@ -49,37 +58,17 @@ function Footer() {
 
                     {/* Socials */}
                     <div className='social-icons'>
-                        <Link
-                        className='social-icon-link'
-                        to='/'
-                        target='_blank'
-                        aria-label='Facebook'>
-                            <a className="sociallink" href="https://www.facebook.com/" target="_blank">
-                                <FaFacebook/>
-                            </a>
-                        </Link>
+                        <a className="sociallink" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                            <FaFacebook/>
+                        </a>
                         
+                        <a className="sociallink" href="https://www.twitter.com/decisionthree" target="_blank" rel="noreferrer">
+                            <FaTwitter/>
+                        </a>
 
-                        <Link
-                        className='social-icon-link'
-                        to='/'
-                        target='_blank'
-                        aria-label='Twitter'>
-                            <a className="sociallink" href="https://www.twitter.com/decisionthree" target="_blank">
-                                <FaTwitter/>
-                            </a>
-                        </Link>
-
-                        <Link
-                        className='social-icon-link'
-                        to=''
-                        target=''
-                        aria-label='Instagram'>
-                            <a className="sociallink" href="https://www.instagram.com/decision.gg/" target="_blank">
-                                <FaInstagram/>
-                            </a>
-                        </Link>
-
+                        <a className="sociallink" href="https://www.instagram.com/decision.gg/" target="_blank" rel="noreferrer">
+                            <FaInstagram/>
+                        </a>
                     </div>
                 </div>
             </section>

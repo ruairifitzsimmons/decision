@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { Link, animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-scroll'
 import './Section.css';
 
 function Section({
