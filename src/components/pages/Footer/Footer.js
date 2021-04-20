@@ -66,7 +66,7 @@ function Footer() {
                             <FaTwitter/>
                         </a>
 
-                        <a className="sociallink" href="https://www.instagram.com/decision.gg/" target="_blank" rel="noreferrer">
+                        <a className="sociallink" href="https://www.instagram.com/ruairifit/" target="_blank" rel="noreferrer">
                             <FaInstagram/>
                         </a>
                     </div>

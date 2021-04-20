@@ -31,15 +31,15 @@ function Section({
                                     <div className="counter-wrapper">
                                         <div className="counter-row">
                                             <div className="counter">
-                                                <h1 className="counter-h1">20m <span className="plus">+</span></h1>
+                                                <h1 className="counter-h1">25m <span className="plus">+</span></h1>
                                                 <p className="counter-p">Total views</p>
                                             </div>
                                             <div className="counter">
-                                                <h1 className="counter-h1">900,000 <span className="plus">+</span></h1>
+                                                <h1 className="counter-h1">915,000 <span className="plus">+</span></h1>
                                                 <p className="counter-p">Subscribers</p>
                                             </div>
                                             <div className="counter">
-                                                <h1 className="counter-h1">700,000 <span className="plus">+</span></h1>
+                                                <h1 className="counter-h1">175,000 <span className="plus">+</span></h1>
                                                 <p className="counter-p">Followers</p>
                                             </div>
                                         </div>
